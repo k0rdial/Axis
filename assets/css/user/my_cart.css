@@ -1,0 +1,128 @@
+.my-cart {
+    padding: 4rem 6rem;
+    background: #fff;
+    min-height: calc(100vh - 103px);
+}
+
+.my-cart h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #000;
+    text-align: left;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.507);
+    transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+    transform: translateY(-3px);
+}
+
+.cart-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cart-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cart-actions {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 10px;
+}
+
+.update-size-form select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.update-size-form select:hover {
+    border-color: #000;
+}
+
+.cart-details h2 {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+.remove-btn {
+    font-family: myFont;
+    border: none;
+    background: #000000;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: fit-content;
+}
+
+.remove-btn:hover {
+    background: #d93636;
+}
+
+.checkout {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+
+.checkout-btn {
+    text-decoration: none;
+    background: #000;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.empty-cart {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-top: 100px;
+}

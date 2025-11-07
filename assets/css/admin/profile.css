@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("/axis.com/assets/font/Gobold Regular.otf");
+}
+
+body {
+    font-family: myFont, serif;
+    min-height: 100vh;
+    width: 100%;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    height: calc(100vh - 102px);
+    width: 100%;
+    overflow: scroll;
+}
+
+button:not(:disabled) {
+    background-color: black;
+    color: white;
+}
+
+.status-message {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    color: green;
+}
+
+.error-message {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* PROFILE SECTION */
+
+.profile {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(207, 207, 207, 0.37);
+}
+
+.profile-input h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.profile-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.profile-input input {
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    margin-right: 1%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.profile-input button {
+    font-family: myFont;
+    width: 20%;
+    font-size: 1em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.profile-input label {
+    margin-right: 2%;
+}
+
+.profile-input a {
+    cursor: pointer;
+}
+
+.profile-input svg {
+    fill: black;
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+input:valid {
+    border-bottom: 2px solid black;
+}
+
+/* ADDRESS SECTION */
+
+.address {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+.address-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.address-input h1 {
+    margin-top: 100px;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.form-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.address-input label {
+    text-align: right;
+    width: 50%;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.address-input input {
+    font-family: myFont;
+    font-size: 1em;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    margin-right: 200px;
+    padding: 5px 20px;
+}
+
+.address-input button {
+    font-family: myFont;
+    font-size: 1em;
+    width: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* ACCOUNT SECTION */
+
+.address-button {
+    gap: 50px;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(207, 207, 207, 0.37);
+}
+
+.title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.account-title {
+    margin-top: 100px;
+}
+
+.email-form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.account-input input {
+    font-size: 1em;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 5px 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#contact {
+    font-family: myFont;
+}
+
+.account-input label {
+    margin-right: 20px;
+}
+
+.account-input button {
+    font-family: myFont;
+    width: 20%;
+    font-size: .8em;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.account-input svg, a {
+    cursor: pointer;
+    fill: black;
+}
+
+.email-button {
+    display: flex;
+    gap: 20px;
+}
+
+/* email animation */
+
+input:focus,
+input:valid {
+    outline-color: black;
+}
+
+input.invalid {
+    outline-color: rgb(204, 0, 0);
+}
+
+/* contact section */
+
+.contact-form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact a{
+    margin-right: 90px;
+}
+
+/* password section */
+
+.password {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.password-title {
+    margin-top: 200px;
+}
+
+.password-form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+#old-password {
+    background-color: inherit;
+}
+
+#new-password {
+    background-color: inherit;
+    margin-right: 17px;
+}
+
+#confirm-password {
+    background-color: inherit;
+    margin-right: 55px;
+}
+
+#password-save {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.footer {
+    display: flex;
+    background-color: white;
+    height: 103px;
+    width: 100%;
+    box-shadow: 0px -1px 7px rgb(202, 197, 197);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer button {
+    font-family: myFont;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:not(:disabled) {
+    transition: all .2s ease-in-out;
+}
+
+button:not(:disabled):hover {
+    background-color: rgb(63, 63, 63);
+}

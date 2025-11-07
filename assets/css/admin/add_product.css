@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("/axis.com/assets/font/Gobold Regular.otf");
+}
+
+.add-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    background-color: white;
+    
+}
+
+.add-product h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.preview-box {
+    width: 250px;
+    height: 250px;
+    border: 2px dashed #aaa;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.preview-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.add-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 15px;
+    font-family: myFont;
+    font-size: 1em;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+    border-color: rgb(0, 132, 255);
+}
+
+button.add-btn {
+    width: 100%;
+    padding: 12px;
+    font-family: myFont;
+    font-size: 1.1em;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button.add-btn:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.add-message {
+    text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(170, 250, 170);
+    margin-bottom: 10px;
+}
+
+.error-message {
+    text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(255, 148, 148);
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}

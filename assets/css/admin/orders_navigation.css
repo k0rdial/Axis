@@ -1,0 +1,26 @@
+.admin-orders-navigation {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+    background-color: white;
+}
+
+.admin-orders-navigation ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.admin-orders-navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    transition: all 0.2s ease;
+}
+
+.admin-orders-navigation a.active {
+    border-bottom: 3px solid black;
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("/axis.com/assets/font/Gobold Regular.otf");
+}
+
+body {
+    font-family: myFont, serif;
+    min-height: 100vh;
+    width: 100%;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.view {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    top: 0;
+}
+
+.view table {
+    height: 100%;
+    width: 100%;
+    gap: 0px;
+    border-collapse: collapse;
+}
+
+.title tr {
+    max-height: 100px;
+}
+
+.title {
+    position: sticky;
+}
+
+.display tr {
+    max-height: 200px !important;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.action {
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-style: none solid solid none;
+}
+
+.action a svg {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.action a svg:hover {
+    transform: scale(1.2);
+}
+
+.update-message {
+    text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(170, 250, 170);
+    margin-bottom: 10px;
+}
+
+.delete-message {
+    text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(255, 148, 148);
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}

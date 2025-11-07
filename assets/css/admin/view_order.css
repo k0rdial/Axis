@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    height: inherit;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.navbar li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    padding: 10px;
+}

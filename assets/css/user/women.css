@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("/axis.com/assets/font/Gobold Regular.otf");
+}
+
+body {
+    font-family: myFont, serif;
+    min-height: 100vh;
+    width: 100%;
+    scrollbar-width: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.all-section {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 103px);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    background-image: 
+    url("/axis.com/assets/img/background2.png");
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10px 20px 10px;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    height: 100px;
+    width: 300px;
+    background: #30303096;
+    border-radius: 20px;
+}
+
+.product-carousel {
+    height: 400px;
+    width: 1000px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+    align-content: center;
+}
+
+.product-track {
+    height: 350px;
+    display: flex;
+    align-self: center;
+    gap: 30px;
+    animation: scrollCarousel 25s linear infinite;
+}
+
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+}
+
+.product-link .product-card {
+    height: 100%;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    max-height: 400px;
+    width: 300px;
+    text-align: center;
+    background: #ffffff7e;
+    border-radius: 15px;
+    box-shadow: 0 0px 8px rgb(65, 65, 65);
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-name {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.product-price {
+    color: #000000;
+    margin-top: 15px;
+}
+
+
+@keyframes scrollCarousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.product-carousel:hover .product-track {
+    animation-play-state: paused;
+}
+
+.scroll {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.scroll a:hover {
+    color: #000;
+    transform: translateY(-3px);
+}
+
+.display-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+    padding: 10rem 10rem;
+    background-color: white;
+}
+
+.display-product .product-card {
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(148, 148, 148);
+    text-align: center;
+}
+
+.display-product .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3px 15px rgb(148, 148, 148);
+}
+
+.display-product img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: .4rem;
+}
+
+.display-product h3 {
+    font-size: 1.1em;
+    margin: 1.5rem 1rem;
+}
+
+.display-product p {
+    font-size: 1em;
+}

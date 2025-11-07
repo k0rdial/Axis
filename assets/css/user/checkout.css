@@ -1,0 +1,355 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("/axis.com/assets/font/Gobold Regular.otf");
+}
+
+body {
+    font-family: myFont, serif;
+    background: #fff;
+    color: #333;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    min-height: calc(100vh - 103px);
+}
+
+.back-button {
+    align-self: flex-start;
+}
+
+.back-button a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.back-button a:hover {
+    transform: translateX(-5px);
+}
+
+.checkout-container {
+    display: flex;
+    gap: 50px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    padding: 40px 60px;
+    max-width: 1000px;
+    max-height: 600px;
+    width: 100%;
+}
+
+.address-section, .cart-summary {
+    flex: 1;
+}
+
+.address-section h2,
+.cart-summary h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.address-section p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 2em;
+}
+
+.no-address a {
+    color: #0077ff;
+    text-decoration: underline;
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-summary form {
+    display: flex;
+    justify-content: center;
+}
+
+.item-scroll {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.item-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.checkout-btn {
+    margin-top: 30px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.checkout-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+} */
+
+/* test below */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("/axis.com/assets/font/Gobold Regular.otf");
+}
+
+body {
+    font-family: myFont, serif;
+    background: #f8f8f8;
+    color: #333;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    min-height: calc(100vh - 103px);
+}
+
+/* BACK BUTTON */
+.back-button {
+    align-self: flex-start;
+    padding-top: 5px;
+}
+
+.back-button a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+.back-button a:hover {
+    transform: translateX(-5px);
+}
+
+/* MAIN CONTAINER */
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    border-radius: 15px;
+    padding: 40px 50px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* CART SUMMARY */
+.cart-summary {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+}
+
+.cart-summary h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.item-scroll {
+    overflow-y: scroll;
+    max-height: 402px !important;
+    padding-right: 10px;
+    scrollbar-width: thin;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.cart-item img {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.item-details h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+
+/* CHECKOUT DETAILS */
+.checkout-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ADDRESS SECTION */
+.address-section {
+    margin-top: 50px;
+}
+
+.address-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.address-box {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.no-address {
+    font-size: 0.9rem;
+}
+
+.no-address a {
+    color: #0077ff;
+    text-decoration: underline;
+}
+
+/* PAYMENT FORM */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.bank-details {
+    background: #f3f3f3;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.checkout-form input[type="file"],
+.checkout-form input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: inherit;
+}
+.checkout-form h2 {
+    align-self: center;
+}
+
+.checkout-btn {
+    font-family: myFont;
+    margin-top: 15px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:not(:disabled):hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.checkout-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.invalid {
+    border-color: rgb(214, 0, 0);
+}
